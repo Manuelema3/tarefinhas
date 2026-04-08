@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity } from 'react-native';
+import { Link } from 'expo-router' // Importa o Link para o texto Não tem conta? Cadastre-se
 
 export default function Login() {
   return (
@@ -37,9 +38,9 @@ export default function Login() {
         </TouchableOpacity>
 
         {/* 5.  Link para Cadastro */}
-        <TouchableOpacity style={styles.linkContainer}>
+        <Link href="/cadastro"style={styles.linkContainer}>
           <Text style={styles.linkText}>Não tem conta? Cadastre-se</Text>
-        </TouchableOpacity>
+        </Link>
       </View>
     </View>
   );

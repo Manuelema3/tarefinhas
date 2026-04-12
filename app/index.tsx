@@ -46,3 +46,32 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
 });
+
+
+/* ====================================================================
+  GUIA DE ESTILO PADRÃO - TAREFINHAS
+  (Copiar e colar para manter a consistência entre as telas)
+  ====================================================================
+  
+  CORES:
+  - Principal (Azul): '#007AFF'
+  - Erro (Vermelho): '#FF3B30'
+  - Fundo:           '#FFFFFF'
+  - Inputs:          '#F5F5F5'
+  - Borda:           '#DDDDDD'
+  - Texto Forte:     '#333333'
+  - Texto Suave:     '#666666'
+
+  TIPOGRAFIA:
+  - Título:    fontSize: 24, fontWeight: 'bold'
+  - Subtítulo: fontSize: 18, fontWeight: '600'
+  - Botão:     fontSize: 16, fontWeight: 'bold'
+  - Corpo:     fontSize: 16, fontWeight: 'normal'
+  - Legendas:  fontSize: 12, fontWeight: 'normal'
+
+  MÉTRICAS:
+  - Raio (Bordas): 8
+  - Altura Input/Botão: 50
+  - Padding Padrão: 20
+  ====================================================================
+*/

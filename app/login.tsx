@@ -32,6 +32,11 @@ export default function Login() {
           secureTextEntry={true}
         />
 
+        <Link href="/esqueci-senha" style={styles.linkEsqueci}>
+        <Text style={styles.linkEsqueciText}> Esqueci minha senha</Text>
+        </Link>
+        
+
         {/* 4. Botão de Login */}
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Acessar</Text>
@@ -84,7 +89,7 @@ const styles = StyleSheet.create({
     borderColor: '#DDD',
     borderRadius: 8,
     paddingHorizontal: 15,
-    marginBottom: 15,
+    marginBottom: 13,
   },
   button: {
     backgroundColor: '#007AFF',
@@ -100,8 +105,19 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
   },
+  linkEsqueci: {
+    alignSelf: 'flex-end',   // Joga o componente todo para a direita
+    marginTop: -11,          // Valor negativo faz ele "subir" e colar no input
+    marginBottom: 17,        // Dá um espaço para o botão de Entrar não ficar colado
+    marginRight: 10,          // Pequeno recuo da borda direita
+  },
+  linkEsqueciText: {
+    color: '#007AFF',        // A cor azul que você definiu no seu guia
+    fontSize: 14,            // Tamanho menor para não brigar com o botão principal
+    fontWeight: '400',       // Deixa a letra levemente mais grossinha
+  },
   linkContainer: {
-    marginTop: 15,
+    marginTop: 17,
   },
   linkText: {
     color: '#007AFF',
